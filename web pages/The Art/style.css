@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Reenie+Beanie&display=swap");
+
+html{
+    font-family: "Open Sans", sans-serif;
+}
+/*Basic*/
+
+body{
+    background-color: #ebeae9;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 5rem;
+}
+
+nav ul{
+    margin-left: 5rem;
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    color: #000;
+}
+
+nav .burger{
+   margin-right: 5rem;
+   cursor: pointer;
+}
+
+nav .burger span{
+    height: 4px;
+    border: 2px solid black;
+    margin: 4px;
+    background-color: #000;
+}
+
+header{
+    margin: 6rem;
+}
+
+.main-heading{
+    width: 50%;
+    font-size: 3rem;
+}
+
+.primary-heading{
+    width: 50%;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    line-height: 30px;
+}
+
+.bg-gray{
+    background-color: rgb(53, 53, 53);
+    color: #fff;
+    padding: 2px 10px;
+    font-weight: bold;
+
+}
+
+.image-container{
+    margin: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:40px;
+    margin-right: 10px;
+    
+}
+
+.image-container img{
+    width: 40%;
+    margin:10px;
+   
+}
+
+/*section three start*/
+.section-three{
+    margin-left: 5rem;
+}
+
+.section-three .primary-heading{
+    margin-bottom: 10rem;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-three .item h1{
+    font-size: 2rem;
+    color: rgb(53, 53, 53);
+    margin-left: 1rem;
+}
+
+.section-three img{
+    width: 400px;
+    height: 400px;
+    margin: 40px;
+}
+/*section three end*/
+
+/*footer start>*/
+
+footer{
+    background-color:#040404;
+    margin-top: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+footer .logo-container h1{
+    font-size: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+
+footer .logo-container p{
+    max-width: 400px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+footer .about-company{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .about-company .container{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+footer .about-company .container h1{
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 50px;
+
+}
+
+footer .about-company .container p{
+    
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+/*footer end>*/
+
+/* responsive*/
+
+@media screen and (max-with: 740px){
+    .header .main-heading{
+        width: 100%;
+    }
+
+    header .primary-heading{
+        width: 100%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .section-three .main-heading{
+        width: 100%;
+    }
+
+    .section-three .primary-heading{
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .section-three img{
+        margin: 0;
+    }
+}

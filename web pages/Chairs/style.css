@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+/* resets */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    --main-color:#e3e8e4;
+    --primary-color:#363636;
+    --main-font:"Playfair Display SC", serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+
+nav h1{
+    padding:12px;
+    color:#f35f43;
+
+
+}
+
+
+ul li{
+    display: inline;
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color:#000;
+    margin-left: 4rem;
+}
+
+ul li a:hover{
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+}
+
+.btn-fill{
+    padding: 10px 30px;
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.btn-outline{
+    background: var(--main-color);
+    border: none;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: point;
+    padding: 10px 20px;
+}
+
+.btn-outline:hover{
+  background: #000;
+  color: #fff;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-container{
+    margin-left: 6rem;
+}
+
+.main-headings{
+    font-size: 4rem;
+    font-family: var(--main-font);
+    color: #0000004f;
+    margin-bottom: 2rem;
+
+}
+
+.primary-headings{
+    max-width: 500px;
+    font-family: sans-serif;
+    line-height: 25px;
+    margin-bottom: 2rem;
+}
+
+.img-container{
+    max-width: 500px;
+    height: 600px;
+    background-color: var(--main-color);
+    border-radius: 100%;
+    margin-top: 2rem;
+}
+
+.img-container .img{
+    width: 400px;
+    height: 500px;
+    margin-left: 20px;
+    margin-bottom: 40px;
+ 
+
+}
+
+/* header end */
+
+.popularity{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.popularity div{
+    margin-right: 5rem;
+}
+
+.popularity div h1{
+    font-size: 3rem;
+    text-align: center;
+    color: #363636;
+    font-family: var(--main-font);
+
+}
+
+.popularity div p{
+    color: #363636;
+    font-family: sans-serif;
+}
+
+/* popularity end */
+
+/* product star */
+
+.products-heading{
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    font-size: 4rem;
+    color: #0000004f;
+}
+
+
+.products-heading span{
+    color: #000;
+    
+}
+
+.products{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.product .product-img-layer{
+    background: var(--main-color);
+    border-top-left-radius:200px ;
+    border-top-right-radius: 200px;
+    padding: 20px;
+}
+
+.product .product-img-layer .img{
+    width: 200px;
+    height: 200px;
+}
+
+.product .product-img-layer .img-one{
+    background: url(images/daniil.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.product .product-img-layer .img-two{
+    background: url(images/daniil.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.product .product-img-layer .img-three{
+    background: url(images/daniil.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.product-content .product-name{
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+.b-container{
+    text-align: center;
+}
+.b-container button{
+    border: none;
+    background: transparent;
+    font-size: 2rem;
+    margin: 0 auto;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+/* why us */
+
+.why-us{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10rem;
+}
+
+.why-us .img-layer{
+    width: 400px;
+    height: 400px;
+    background: var(--main-color);
+    border-radius: 100%;
+}
+
+.why-us .img-layer .img{
+    width: 400px;
+    height: 400px;
+    background: url(images/daniil.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.card{
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+.cards .card-fill{
+  background: #e3e8e490;
+  position: relative;
+}
+
+ .card .star{
+    width: 10px;
+    height: 10px;
+    pad: 15px;
+    border-radius: 100%;
+    background: var(--primary-color);
+    position: absolute;
+    top: -15px;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #fff;
+
+}
+
+
+.card h1{
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+}
+
+.card p{
+    color: #9999;
+    font-family: sans-serif;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.features{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.features .main-headings{
+    font-family: var(--main-color);
+    font-size: 4rem;
+    color: #0000004f;
+    margin-bottom: 20px;
+    
+}
+
+.features span{
+    color:#000;
+}
+
+.features .primary-headings{
+    max-width: 500px;
+    font-family: sans-serif;
+}
+
+.features .img-container{
+    width: 300px;
+    height: 350px;
+    background: var(--main-color);
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+
+}
+
+ .img-container.d-none img{
+    width: 300px;
+    height: 300px;
+ 
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 10rem;
+    height: 100vh;
+    background: var(--primary-color);
+    color: #fff;
+}
+
+footer .log-container h1{
+    font-size: 4rem;
+    font-family:var(--main-font);
+    margin-bottom: 20px;
+
+}
+
+footer .log-container p{
+    max-width: 400px;
+    font-family: sans-serif;
+    line-height: 25px;
+}
+
+footer .about-company{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+footer .about-company .container{
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+footer .about-company .container h1{
+ margin-bottom: 50px;
+ border-bottom: 2px dashed red;
+    
+}
+
+footer .about-company .container p{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+
+
+/* respnsiveness */
+
+@media only screen and (max-width:1150px){
+    .img-container{
+        width: 340px;
+        height: 340px;
+
+    }
+
+    .d-none{
+        display: none;
+    }
+    
+}
+
+@media only screen and (max-width:900px) {
+    header{
+        height:120vh;
+        text-align:center;
+        justify-content: center;
+    }
+
+    header .content-container{
+        margin-bottom: 6rem;
+        margin-top: 4rem;
+        margin-left: 0;
+    }
+
+    .popularity{
+        margin-top: 22rem;
+        text-align: center;
+    }
+ .d-none{
+    display: none;
+ }
+
+}
+
+@media only screen and (max-width:600px) {
+    .primary-headings{
+        width: 35px;
+    }
+
+    .img-container{
+        width: 35px;
+        height: 35px;
+    }
+
+    .popularity div h1{
+
+     font-size: 2rem;
+    }
+
+    .popularity div{
+        font-size: 0.9rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 7rem;
+    }
+
+    .main-headings{
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .d-none{
+        display: none;
+    }
+
+    .cards{
+        margin-right: 5rem;
+    }
+
+    .card-fill{
+        margin-left: 10px;
+    }
+    
+}
+
